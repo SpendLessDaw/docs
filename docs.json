@@ -29,20 +29,23 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index"
             ]
           },
           {
             "group": "Customization",
+            "hidden": true,
             "pages": [
               "essentials/settings",
-              "essentials/navigation"
+              "essentials/navigation",
+              "development",
+              "quickstart",
+              "index-copied-1"
             ]
           },
           {
             "group": "Writing content",
+            "hidden": true,
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -52,6 +55,7 @@
           },
           {
             "group": "AI tools",
+            "hidden": true,
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
