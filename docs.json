@@ -1,14 +1,27 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "maple",
+  "name": "SpendLess Daw Doc",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#c462ff",
+    "light": "#dea9ff",
+    "dark": "#9929de"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/spendless-logo-v2.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "SpendLess Daw",
+          "icon": "grid-2",
+          "color": {
+            "light": "#c462ff",
+            "dark": "#c462ff"
+          },
+          "href": "https://spendlessdaw.app"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Guides",
@@ -46,54 +59,12 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
+  "logo": "/images/spendless-logo-v2.svg",
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
@@ -114,9 +85,20 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/SpendLessDaw",
+      "youtube": "https://www.youtube.com/@SpendLessDaw",
+      "instagram": "https://www.instagram.com/spendlessdaw/",
+      "x": "https://x.com/SpendLessDaw"
     }
+  },
+  "appearance": {
+    "strict": true,
+    "default": "dark"
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "thumbnails": {
+    "appearance": "dark"
   }
 }
