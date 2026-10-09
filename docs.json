@@ -147,5 +147,22 @@
   "description": "Spend less time managing files and more time making music. Learn to organize FL Studio projects, collect samples, make backups, and recover your work.",
   "search": {
     "prompt": "Search projects, samples, backups…"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/en/welcome",
+      "permanent": true
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/en/welcome",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-install",
+      "destination": "/en/installation",
+      "permanent": true
+    }
+  ]
 }
