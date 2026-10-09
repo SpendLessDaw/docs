@@ -69,11 +69,20 @@
         "groups": [
           {
             "group": "Bien démarrer",
-            "pages": []
+            "pages": [
+              "fr/welcome",
+              "fr/installation",
+              "fr/first-project"
+            ]
           },
           {
             "group": "Votre musique",
-            "pages": []
+            "pages": [
+              "fr/projects",
+              "fr/detection",
+              "fr/samples",
+              "fr/audio-previews"
+            ]
           },
           {
             "group": "Protéger et déplacer vos projets",
