@@ -1,0 +1,29 @@
+---
+title: "FL Studio detection and project updates"
+description: "Understand open-project detection, automatic refreshes and the permissions they need."
+---
+
+SpendLess detects two things: whether FL Studio is running, and which managed project is open. It also checks whether saved project files have changed.
+
+## During a session
+1. Open a managed project from SpendLess.
+2. Make changes and **save in FL Studio**.
+3. Close that project or quit FL Studio.
+4. Leave SpendLess running for a few seconds to refresh the saved project.
+
+Refreshing reads the saved metadata and plugins, collects available samples, and updates the project card. It does **not** save your unsaved FL Studio session or render a preview.
+
+## Automatic or manual
+**Settings → Preferences → Update projects** enables processing when a change is detected. If you turn it off, use **Update project** in the project's menu after saving and closing it.
+
+SpendLess avoids updating a project it recognizes as open. If FL Studio is running but its project cannot be identified reliably, detection can keep the previous state instead of immediately unlocking the project.
+
+## If detection is wrong
+<Steps>
+<Step title="Check the application path">Open **Settings → Advanced → DAW path**. Try **Autodetect**, or **Change** to select the FL Studio application you actually use.</Step>
+<Step title="Check macOS permission">Allow SpendLess in **System Settings → Privacy & Security → Accessibility**. Restart SpendLess after changing the permission.</Step>
+<Step title="Open the managed copy">Launch the project from SpendLess rather than an older copy in your original folder. Use distinct project titles.</Step>
+<Step title="Let the session finish">Save, quit FL Studio and wait a few seconds. If the state remains stuck, restart SpendLess before retrying the action.</Step>
+</Steps>
+
+The **FL Studio data path** is a separate setting used to find FL Studio resources. It is not the application path. See [samples](/en/samples) for missing audio.

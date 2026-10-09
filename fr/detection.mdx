@@ -1,0 +1,29 @@
+---
+title: "Détection de FL Studio et actualisation"
+description: "Comprendre la détection du projet ouvert, les actualisations et les autorisations."
+---
+
+SpendLess vérifie si FL Studio fonctionne, quel projet de sa bibliothèque est ouvert et quels fichiers enregistrés ont changé.
+
+## Pendant une session
+1. Ouvrez un projet depuis SpendLess.
+2. Travaillez et **enregistrez dans FL Studio**.
+3. Fermez ce projet ou quittez FL Studio.
+4. Laissez quelques secondes à SpendLess pour actualiser les informations.
+
+L'actualisation relit les métadonnées et plugins, collecte les samples accessibles et met à jour la carte. Elle n'enregistre pas les modifications non sauvegardées dans FL Studio et ne génère pas d'aperçu audio.
+
+## Automatique ou manuel
+**Settings → Preferences → Update projects** active le traitement des changements détectés. Si cette option est désactivée, utilisez **Update project** dans le menu après avoir enregistré et fermé le projet.
+
+SpendLess évite de modifier le fichier d'un projet reconnu comme ouvert. Si FL Studio fonctionne mais que le projet n'est pas identifiable de manière fiable, l'app peut conserver l'état précédent.
+
+## Corriger la détection
+<Steps>
+<Step title="Application">Dans **Settings → Advanced → DAW path**, essayez **Autodetect**, ou **Change** pour choisir votre application FL Studio.</Step>
+<Step title="Autorisation macOS">Autorisez SpendLess dans **Réglages Système → Confidentialité et sécurité → Accessibilité**, puis relancez-le.</Step>
+<Step title="Bonne copie">Ouvrez le projet depuis SpendLess plutôt qu'une ancienne copie dans le dossier d'origine. Donnez des titres distincts aux projets.</Step>
+<Step title="Fin de session">Enregistrez, quittez FL Studio et attendez quelques secondes. Si le projet reste verrouillé, relancez SpendLess.</Step>
+</Steps>
+
+**FL Studio data path** désigne le dossier de données, pas l'application FL Studio. Consultez [les samples](/fr/samples) si des sons manquent.

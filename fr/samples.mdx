@@ -1,0 +1,29 @@
+---
+title: "Garder les samples avec vos projets"
+description: "Comprendre la collecte des fichiers audio et retrouver les sons manquants."
+---
+
+Un fichier de projet mémorise l'emplacement des sons. Si un dossier change ou qu'un disque est débranché, ces sons peuvent manquer.
+
+À l'import et lors des actualisations, SpendLess lit les références accessibles dans le FLP, copie les samples disponibles dans le dossier **samples** du projet et adapte les références dans la copie gérée.
+
+## À retenir
+- Gardez les dossiers source et disques externes accessibles pendant le traitement.
+- Écoutez la copie dans FL Studio avant de supprimer les originaux.
+- Deux samples différents peuvent porter le même nom. SpendLess conserve leurs contenus distincts avec des suffixes comme **_2** ou **_3**.
+- Après une collecte complète, les copies locales qui ne sont plus référencées peuvent être déplacées vers la corbeille.
+
+<Warning>Le projet collecté n'est pas une copie de toute votre bibliothèque sonore. Les sons internes à un plugin, ses presets, ses bibliothèques et son installation peuvent rester nécessaires séparément.</Warning>
+
+## Retrouver des samples manquants
+<Steps>
+<Step title="Reconnecter">Rebranchez le disque ou restaurez le dossier contenant l'audio original.</Step>
+<Step title="Vérifier les données FL Studio">Si vous utilisez un emplacement personnalisé, réglez **Settings → Advanced → FL Studio data path**.</Step>
+<Step title="Réparer dans FL Studio">Ouvrez la copie gérée, retrouvez les sons manquants dans FL Studio, puis enregistrez et fermez.</Step>
+<Step title="Actualiser et écouter">Choisissez **Update project** dans SpendLess, puis rouvrez le morceau pour vérifier le résultat.</Step>
+</Steps>
+
+## Aucun sample ne signifie pas forcément un problème
+Un morceau composé uniquement avec des instruments peut ne contenir aucun sample externe. **No sample alert**, dans Preferences, contrôle le message lorsqu'une actualisation n'en trouve aucun. Cette option ne garantit pas qu'un projet est entièrement transportable.
+
+Avant de partager, consultez [la liste de vérification d'export](/fr/export-projects).

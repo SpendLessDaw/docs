@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "SpendLess Daw Doc",
+  "name": "SpendLess",
   "colors": {
     "primary": "#c462ff",
     "light": "#dea9ff",
@@ -22,44 +22,85 @@
         }
       ]
     },
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
+        "language": "en",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Start here",
             "pages": [
-              "index"
+              "en/welcome",
+              "en/installation",
+              "en/first-project"
             ]
           },
           {
-            "group": "Customization",
-            "hidden": true,
+            "group": "Your music",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation",
-              "development",
-              "quickstart",
-              "index-copied-1"
+              "en/projects",
+              "en/detection",
+              "en/samples",
+              "en/audio-previews",
+              "en/templates"
             ]
           },
           {
-            "group": "Writing content",
-            "hidden": true,
+            "group": "Protect and move your work",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "en/export-projects",
+              "en/archives",
+              "en/backups",
+              "en/storage"
             ]
           },
           {
-            "group": "AI tools",
-            "hidden": true,
+            "group": "Help",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "en/settings",
+              "en/updates",
+              "en/troubleshooting",
+              "en/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "fr",
+        "groups": [
+          {
+            "group": "Bien démarrer",
+            "pages": [
+              "fr/welcome",
+              "fr/installation",
+              "fr/first-project"
+            ]
+          },
+          {
+            "group": "Votre musique",
+            "pages": [
+              "fr/projects",
+              "fr/detection",
+              "fr/samples",
+              "fr/audio-previews",
+              "fr/templates"
+            ]
+          },
+          {
+            "group": "Protéger et déplacer vos projets",
+            "pages": [
+              "fr/export-projects",
+              "fr/archives",
+              "fr/backups",
+              "fr/storage"
+            ]
+          },
+          {
+            "group": "Aide",
+            "pages": [
+              "fr/settings",
+              "fr/updates",
+              "fr/troubleshooting",
+              "fr/faq"
             ]
           }
         ]
@@ -68,24 +109,22 @@
   },
   "logo": "/images/spendless-logo-v2.svg",
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "href": "https://spendlessdaw.app",
+        "label": "Back to website"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Download SpendLess",
+      "href": "https://spendlessdaw.app/#download"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "copy"
+  ]
   },
   "footer": {
     "socials": {
@@ -104,5 +143,23 @@
   },
   "thumbnails": {
     "appearance": "dark"
-  }
+  },
+  "description": "Spend less time managing files and more time making music. Learn to organize FL Studio projects, collect samples, make backups, and recover your work.",
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/en/welcome",
+      "permanent": true
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/en/welcome",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-install",
+      "destination": "/en/installation",
+      "permanent": true
+    }
+  ]
 }

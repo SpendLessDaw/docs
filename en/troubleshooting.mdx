@@ -1,0 +1,38 @@
+---
+title: "Troubleshooting and support"
+description: "Resolve installation, detection, missing audio, import and backup problems."
+---
+
+Start by saving your work in FL Studio. Note the exact error message and your SpendLess version in **Settings → About**.
+
+<AccordionGroup>
+<Accordion title="The app will not open">
+Follow the [Windows or macOS installation steps](/en/installation). Download again from the official website if the installer is incomplete. For a damaged-app or malware warning, stop and ask for help.
+</Accordion>
+<Accordion title="FL Studio is not detected, or a project stays locked">
+Check **DAW path**, macOS **Accessibility** permission and that you opened the managed copy. Save and quit FL Studio, wait a few seconds, then restart SpendLess if necessary. [Detection guide](/en/detection).
+</Accordion>
+<Accordion title="Samples are missing or the track sounds different">
+Reconnect source drives, check **FL Studio data path**, resolve missing audio in FL Studio, save and close, then **Update project**. Install any required plugins and their libraries separately. [Sample guide](/en/samples).
+</Accordion>
+<Accordion title="My changes are not showing">
+SpendLess reads saved files. Save in FL Studio, close the project and check **Update projects** in Preferences. A preview needs a new audio render; it does not refresh with the FLP.
+</Accordion>
+<Accordion title="An import or export failed">
+Check that the file is an FLP, a supported SpendLess archive, or a ZIP containing an FLP. Make sure the source and destination are accessible and there is enough free space. A newer or unsupported archive can require updating SpendLess. Keep the original file and report the exact error if it continues.
+</Accordion>
+<Accordion title="A project says it needs repair">
+Keep a copy of its folder. Check whether its FLP still exists and opens in FL Studio. Restore a known-good file or [a backup](/en/backups) if available. Do not delete the original folder while diagnosing the problem.
+</Accordion>
+<Accordion title="A backup completed with failed projects">
+Treat it as incomplete. Check which projects are accessible, export important ones individually and retry after resolving the problem. Inspect and test the archive before relying on it.
+</Accordion>
+<Accordion title="An audio preview is silent">
+Check the attached preview, player volume and your computer's audio output. Test the audio file in another player. [Preview guide](/en/audio-previews).
+</Accordion>
+</AccordionGroup>
+
+## Ask for help
+Join [SpendLess on Discord](https://discord.gg/GEbfjJfU8Y) or contact [@SpendLessDaw on X](https://x.com/SpendLessDaw).
+
+Include your operating system, SpendLess and FL Studio versions, the action you tried, and the exact message or a screenshot. Mention whether the problem affects one project or all projects. Remove private paths or unreleased music from anything you share publicly.
