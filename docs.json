@@ -40,16 +40,27 @@
               "en/projects",
               "en/detection",
               "en/samples",
-              "en/audio-previews"
+              "en/audio-previews",
+              "en/templates"
             ]
           },
           {
             "group": "Protect and move your work",
-            "pages": []
+            "pages": [
+              "en/export-projects",
+              "en/archives",
+              "en/backups",
+              "en/storage"
+            ]
           },
           {
             "group": "Help",
-            "pages": []
+            "pages": [
+              "en/settings",
+              "en/updates",
+              "en/troubleshooting",
+              "en/faq"
+            ]
           }
         ]
       },
