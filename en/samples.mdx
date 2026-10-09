@@ -1,0 +1,29 @@
+---
+title: "Keep samples with your projects"
+description: "Learn how sample collection works and what to do when audio is missing."
+---
+
+A project file remembers where its audio lives. If those files move or an external drive is disconnected, the project may open with missing sounds.
+
+During import and project updates, SpendLess looks for sample references it can read from the FL Studio file, copies available files into the managed project's **samples** folder, and updates the managed file's references.
+
+## What this means for you
+- Keep source folders and external drives available while importing or updating.
+- Open the managed copy in FL Studio and listen before removing the original.
+- Two different samples can have the same filename. SpendLess preserves distinct contents with suffixes such as **_2** and **_3** instead of replacing one with the other.
+- On a complete refresh, local sample copies no longer referenced by the project can be moved to the system trash.
+
+<Warning>A collected project is not a copy of your entire sound library. Audio hidden inside a plugin, its presets, sample libraries and plugin installations may still be required separately.</Warning>
+
+## Fix missing samples
+<Steps>
+<Step title="Reconnect the source">Reconnect the drive or restore the folder containing the original audio.</Step>
+<Step title="Check FL Studio's data folder">If you use a custom FL Studio data location, set **Settings → Advanced → FL Studio data path** to the correct folder.</Step>
+<Step title="Resolve the project in FL Studio">Open the managed project, locate any missing audio in FL Studio, then save and close it.</Step>
+<Step title="Refresh and test">Choose **Update project** in SpendLess. Reopen the project and check that the expected sounds play.</Step>
+</Steps>
+
+## “No sample” does not always mean a problem
+A project made only with instruments may have no external samples. **Settings → Preferences → No sample alert** controls the message shown when an update finds none; it is not a guarantee that every sound is portable.
+
+Before sending a track to another computer, use the [export checklist](/en/export-projects).
