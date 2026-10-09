@@ -81,16 +81,27 @@
               "fr/projects",
               "fr/detection",
               "fr/samples",
-              "fr/audio-previews"
+              "fr/audio-previews",
+              "fr/templates"
             ]
           },
           {
             "group": "Protéger et déplacer vos projets",
-            "pages": []
+            "pages": [
+              "fr/export-projects",
+              "fr/archives",
+              "fr/backups",
+              "fr/storage"
+            ]
           },
           {
             "group": "Aide",
-            "pages": []
+            "pages": [
+              "fr/settings",
+              "fr/updates",
+              "fr/troubleshooting",
+              "fr/faq"
+            ]
           }
         ]
       }

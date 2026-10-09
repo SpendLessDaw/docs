@@ -1,0 +1,36 @@
+---
+title: "Sauvegarder et restaurer"
+description: "Distinguer les copies automatiques de FLP et les sauvegardes ZIP de la bibliothèque."
+---
+
+SpendLess propose deux outils différents. Choisissez selon ce que vous souhaitez récupérer.
+
+| Outil | Protection | Accès |
+| --- | --- | --- |
+| Copies automatiques du fichier projet | Un **FLP précédent**, avant le traitement d'une modification ou actualisation | Menu du projet → **Load Backup** |
+| Sauvegarde manuelle de bibliothèque | Les projets actifs en ZIP individuels avec FLP et samples collectés | **Settings → Advanced → Save backup** |
+
+## Restaurer un FLP
+<Steps>
+<Step title="Conserver le travail actuel">Enregistrez et fermez le projet dans FL Studio. Exportez une copie séparée si vous souhaitez conserver son état actuel.</Step>
+<Step title="Choisir une copie">Dans le menu du projet, ouvrez **Load Backup**. Sélectionnez une sauvegarde datée dans le Backup Manager.</Step>
+<Step title="Restaurer et écouter">Choisissez **Load Backup**. Le FLP actuel va à la corbeille et la copie choisie le remplace. Ouvrez le projet restauré dans FL Studio et vérifiez-le.</Step>
+</Steps>
+
+<Frame caption="Le Backup Manager dans le nouveau design.">
+<img src="/images/guides/restore-backup.png" alt="Gestionnaire de sauvegardes avec sélection d'une copie et bouton Load Backup" />
+</Frame>
+
+Cet historique local est limité. Ce n'est **pas une sauvegarde continue** : il ne récupère ni les modifications FL Studio non enregistrées, ni les anciens samples, ni les plugins ou le dossier complet.
+
+## Sauvegarder la bibliothèque
+1. Enregistrez et fermez vos projets.
+2. Ouvrez **Settings → Advanced → Save backup**.
+3. Choisissez la destination et la compression, puis lancez.
+4. Attendez et vérifiez si le message signale des projets en échec.
+
+Le ZIP obtenu contient **un ZIP par projet actif**. Pour restaurer, extrayez le ZIP principal puis importez chaque ZIP de projet. N'importez pas l'archive globale comme un seul morceau.
+
+<Warning>Cette sauvegarde n'inclut pas les projets archivés, les modèles, les réglages, les plugins, ni les images et aperçus SpendLess. Copiez-les séparément pour un transfert complet.</Warning>
+
+Gardez une autre copie sur un autre disque ou votre propre service de sauvegarde. Testez régulièrement un import : une copie sur le même disque ne protège pas contre sa panne.
